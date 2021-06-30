@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="import" href="/HTML/navbar.html" />
     <title>Fisioterapia</title>
 </head>
 
 <body>
-
+    <!-- <iframe src="/HTML/navbar.html"></iframe> -->
+    <div id="navbar_initial"></div>
+    <script src="JS/jquery-3.6.0.min.js"></script>
     <script src="JS/index.js"></script>
     <script type="text/javascript">
         /*window.addEventListener('load',() => {
-            IndexJS.prueba();
-        })*/
+                                          
+                                        })*/
+        $(document).ready(() => {
+            $('#navbar_initial').load('/HTML/navbar.html');
+        });
     </script>
 </body>
 
