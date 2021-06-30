@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+       .container{
+           display: block;
+           width:100%;
+           margin: auto;
+           padding: 0 1px;
+       }
+       .navbar-menu{
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           padding: 0 6px;
+           border: 0.5px solid;
+           background-color: rgba(223, 223, 223, 0.468);
+       }
+       button{
+            visibility:hidden;
+       }
+       .navbar-logo{
+           display: inline-block;
+           width: 15%;
+           margin: 2px 0;
+       }
+       .navbar-logo img{
+           display: inline;
+           max-width: 100%;
+           margin: 0;
+           padding: 0;
+       }
+       .navbar-enlaces{
+           /* background-color: rgb(212, 242, 241);  */
+           margin: 4px;
+           padding: 4px 8px;
+       }
+       .enlaces{
+           display: flex;
+           list-style: none;
+           margin: 14px 0;
+           padding: 0;
+       }
+       .enlaces li{
+           margin: 4px 15px;
+           border-radius: 8%;
+           background-color: rgb(239, 234, 234);
+           box-shadow: 0px 1px 2px rgb(254, 254, 255);
+
+       }
+       .enlaces a{
+           font-size: 1.1em;
+           display: block;
+           color:#0c4cd7;
+           /* color: #FFF; */
+           padding: 4px 5px;
+           text-decoration: none;
+       }
+       @media only screen and (max-width:795px){
+           .navbar-menu{
+               position: relative;
+               justify-content: space-between;
+               padding: 2px 10px 4px 15px;
+               z-index: 1;
+           }
+           .navbar-logo{
+               margin-left: 4px;
+           }
+           .navbar-enlaces{
+               visibility: hidden;
+               width: 100%;
+               margin: auto;
+               margin-bottom: 4px;
+               position: absolute;
+               bottom:0;
+               top: 0;
+           }
+           .enlaces{
+               display: block;
+               width: 100%;
+               font-size: .8em;
+           }
+           button{
+               width: 50%;
+               visibility: visible;
+               width: 30px;
+               height: 25px;
+               color: #3e6ac9;
+               border-color: #3e6ac9;
+               border-radius: 4px;
+           }
+       }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar-menu">
+            <a class="navbar-logo" href=""><img src="/Imagenes/depositphotos_massage.png" alt="" srcset=""></a>
+            <button type="button"><span><i class="fas fa-bars"></i></span></button>
+            <div class="navbar-enlaces">
+                <ul class="enlaces">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Centro</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
