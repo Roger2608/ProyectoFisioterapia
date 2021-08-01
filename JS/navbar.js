@@ -1,16 +1,3 @@
-addEventListener('DOMContentLoaded', () => {
-    const boton = document.querySelector('.boton')
-    if (boton) {
-        boton.addEventListener('click', () => {
-            const menu = document.querySelector('.enlaces')
-            menu.classList.toggle('show')
-        })
-    }
-})
-addEventListener('load', () => {
-    UtilitiesJS.consultarArchivosJson('GET', '../JSON/menu.json', true, navbarJS.llenarNavbar);
-})
-
 const navbarJS = {
     llenarNavbar: (dataNavbar) => {
         if (dataNavbar != null && dataNavbar != undefined) {
@@ -22,5 +9,21 @@ const navbarJS = {
                 menu.innerHTML += `<li><a href="${element.redireccion}">${element.nombreCategoria}</a></li>`;
             });
         }
+    },
+    desplegarMenu: () => {
+        const boton = document.querySelector('.boton')
+        if (boton) {
+            boton.addEventListener('click', () => {
+                const menu = document.querySelector('.enlaces')
+                menu.classList.toggle('show')
+            })
+        }
     }
 }
+
+addEventListener('DOMContentLoaded', () => {
+    navbarJS.desplegarMenu();
+});
+addEventListener('load', () => {
+    UtilitiesJS.consultarArchivosJson('GET', '../JSON/menu.json', true, navbarJS.llenarNavbar);
+});
