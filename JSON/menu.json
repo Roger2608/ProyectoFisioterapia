@@ -3,10 +3,12 @@
         "nombreLogo": "menu",
         "imageLogo": "depositphotos_massage.png"
     },
-    "allCategories": [{
+    "allCategories": [
+        {
             "nombreCategoria": "Inicio",
             "redireccion": "#inicio",
-            "subCategorias": [{
+            "subCategorias": [
+                {
                     "nombreSubCategoria": "SubCategoriaPrueba"
                 },
                 {
@@ -29,7 +31,8 @@
         {
             "nombreCategoria": "Centro",
             "redireccion": "#Centro",
-            "subCategorias": [{
+            "subCategorias": [
+                {
                     "nombreSubCategoria": "SubCategoriaPrueba"
                 },
                 {
@@ -52,7 +55,8 @@
         {
             "nombreCategoria": "Servicios",
             "redireccion": "#Servicios",
-            "subCategorias": [{
+            "subCategorias": [
+                {
                     "nombreSubCategoria": "SubCategoriaPrueba"
                 },
                 {
@@ -75,7 +79,8 @@
         {
             "nombreCategoria": "Nosotros",
             "redireccion": "#Nosotros",
-            "subCategorias": [{
+            "subCategorias": [
+                {
                     "nombreSubCategoria": "SubCategoriaPrueba"
                 },
                 {
@@ -98,7 +103,8 @@
         {
             "nombreCategoria": "Blog",
             "redireccion": "#Blog",
-            "subCategorias": [{
+            "subCategorias": [
+                {
                     "nombreSubCategoria": "SubCategoriaPrueba"
                 },
                 {
@@ -121,7 +127,8 @@
         {
             "nombreCategoria": "Contacto",
             "redireccion": "#Contacto",
-            "subCategorias": [{
+            "subCategorias": [
+                {
                     "nombreSubCategoria": "SubCategoriaPrueba"
                 },
                 {
