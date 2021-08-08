@@ -1,0 +1,31 @@
+.carouselContainer {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-initial {
+    /* modificar width dependiendo de la cantidad de imagenes  */
+    width: 300%;
+    height: 400px;
+    display: flex;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carouselimage {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    top: 50%;
+}
