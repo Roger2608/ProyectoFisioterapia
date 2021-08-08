@@ -11,8 +11,8 @@
 
 <body>
     <div id="carouselContainer" class="carouselContainer">
-        <div class="carousel-initial">
-            <div class="carousel-item active">
+        <div class="carousel-initial" id="carousel-initial">
+            <div class="carousel-item enabled">
                 <img src="/Imagenes/depositphotos_life-people.jpg" class="carouselimage" alt="">
             </div>
             <div class="carousel-item">
@@ -22,14 +22,16 @@
                 <img src="/Imagenes/depositphotos.jpg" class="carouselimage" alt="">
             </div>
         </div>
-        <button class="carousel-btn prev" type="button">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-btn next" type="button">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="containerBtn">
+            <button class="carousel-btn prev" type="button" id="btnPrevious">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">&#60;</span>
+            </button>
+            <button class="carousel-btn next" type="button" id="btnNext">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">&#62;</span>
+            </button>
+        </div>
     </div>
 
     <script src="/JS/carousel.js"></script>
