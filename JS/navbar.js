@@ -8,6 +8,7 @@ const navbarJS = {
             dataNavbar.allCategories.forEach(element => {
                 menu.innerHTML += `<li><a href="${element.redireccion}">${element.nombreCategoria}</a></li>`;
             });
+            navbarJS.desplegarMenu();
         }
     },
     desplegarMenu: () => {
@@ -21,9 +22,6 @@ const navbarJS = {
     }
 }
 
-addEventListener('DOMContentLoaded', () => {
-    navbarJS.desplegarMenu();
-});
 addEventListener('load', () => {
     UtilitiesJS.consultarArchivosJson('GET', '../JSON/menu.json', true, navbarJS.llenarNavbar);
 });
