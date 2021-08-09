@@ -1,0 +1,13 @@
+package com.fisioterapia;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class FisioterapiaApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
